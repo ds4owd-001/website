@@ -3,7 +3,7 @@ title: "Module 3"
 subtitle: "{{< var md-03.title >}}"
 editor: source
 params:
-    week: 3
+    module: 3
 execute: 
   echo: false
   warning: false
@@ -20,8 +20,8 @@ library(epoxy)
 ```{r}
 #| label: learning-objectives
 
-lobj <- readr::read_csv(here::here("data/tbl-02-ds4owd-001-learning-objectives.csv")) |> 
-  dplyr::filter(week == params$week) |>
+lobj <- readr::read_csv(here::here("data/tbl-01-rbtl-fs24-learning-objectives.csv")) |> 
+  dplyr::filter(module == params$module) |>
   dplyr::pull(learning_objectives)
 
 ```
@@ -31,6 +31,7 @@ lobj <- readr::read_csv(here::here("data/tbl-02-ds4owd-001-learning-objectives.c
 ```
 
 ## {{< fa display >}} Slides
+
 
 [View slides in full screen](../slides/lec-03-transformation.html) | [Download slides as PDF](https://github.com/ds4owd-001/website/raw/main/slides/lec-03-transformation.pdf)
 
@@ -44,10 +45,11 @@ lobj <- readr::read_csv(here::here("data/tbl-02-ds4owd-001-learning-objectives.c
 
 ## {{< fa code >}} Assignments
 
-Please complete the following assignment by Monday, 20th November 2023. 
+Please complete the following assignment by Wednesday, March 13th.
 
 -   [Assignment 1](../assignments/md-03/am-03-1-data-transformation.qmd): Data transformation
--   [Assignment 2](../assignments/md-03/am-03-2-spreadsheet.qmd): Create a spreadsheet
+-   [Assignment 2](../assignments/md-03/am-03-2-google-workspace.qmd): Setup ETH Google Workspace
+-   [Assignment 3](../assignments/md-03/am-03-3-spreadsheet.qmd): Create a spreadsheet
 
 Thank you for working through this assignment. 
 

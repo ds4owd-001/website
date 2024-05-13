@@ -3,11 +3,11 @@ title: "Module 2"
 subtitle: "{{< var md-02.title >}}"
 editor: source
 params:
-    week: 2
+    module: 2
 execute: 
   echo: false
   warning: false
-bibliography: ../ds4owd-001.bib
+bibliography: ../rbtl-fs24.bib
 ---
 
 Are you ready for some data visualisations? This week is all about exploring data with `ggplot2` R package. We will also learn about the data science lifecycle. 
@@ -23,8 +23,8 @@ library(epoxy)
 ```{r}
 #| label: learning-objectives
 
-lobj <- readr::read_csv(here::here("data/tbl-02-ds4owd-001-learning-objectives.csv")) |> 
-  dplyr::filter(week == params$week) |>
+lobj <- readr::read_csv(here::here("data/tbl-01-rbtl-fs24-learning-objectives.csv")) |> 
+  dplyr::filter(module == params$module) |>
   dplyr::pull(learning_objectives)
 
 ```
@@ -35,12 +35,11 @@ lobj <- readr::read_csv(here::here("data/tbl-02-ds4owd-001-learning-objectives.c
 
 ## {{< fa display >}} Slides
 
-[View slides in full screen](../slides/lec-02-visualisation.html) | [Download slides as PDF](https://github.com/ds4owd-001/website/raw/main/slides/lec-02-visualisation.pdf)
+[View slides in full screen](../slides/lec-02-visualisation.html) | [Download slides as PDF](https://github.com/rbtl-fs24/website/raw/main/slides/lec-02-visualisation.pdf)
 
 ```{=html}
 <iframe class="slide-deck" src="../slides/lec-02-visualisation.html" height="420" width="747" style="border: 1px solid #123233;"></iframe>
 ```
-
 
 ## {{< fa book >}} Readings
 
@@ -50,10 +49,10 @@ lobj <- readr::read_csv(here::here("data/tbl-02-ds4owd-001-learning-objectives.c
 
 ## {{< fa code >}} Assignments
 
-Please complete the following assignment by Monday, 13th November 2023. 
+Please complete the following assignment by Wednesday, 6th March 2024. 
 
--   [Assignment 1](../assignments/md-02/am-02-1-data-visualisation.qmd): Data visualisation
+-   [Assignment 1](../assignments/md-02/am-02-1-github.qmd): Git configuration
+-   [Assignment 2](../assignments/md-02/am-02-2-data-visualisation.qmd): Data visualisation
 
-Thank you for working through this assignment. 
-
+Thank you for working through this assignment
 
